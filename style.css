@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playfair+Display+SC&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
 
-h5{
- 
-  font-family: Georgia, 'Times New Roman', Times, serif;  
+:root {
+  --sm-font: 'Poppins', sans-serif;
+  --lg-font: 'Black Ops One', serif;
+  --black: #1E1E1E;
+  --white: #9697A1;
+}
+
+body {
+  font-family: var(--sm-font);
+}
+
+.navbar {
+
+  background-color: var(--black);
+  box-shadow: 0 3px 9px 3px rgba(55, 55, 55, 0.853);
+
+}
+
+.navbar-brand {
+  color: var(--white) !important;
+}
+
+.nav-link {
+  color: var(--white) !important;
+}
+
+
+
+.fs-2 {
+  color: var(--black);
+  font-family: var(--lg-font);
+}
+
+.text {
+  font-family: var(--sm-font);
+}
+
+.card-title {
+  font-family: var(--lg-font);
+  font-size: 17px;
+}
+
+.card-text {
+  font-family: var(--sm-font);
+
 }
