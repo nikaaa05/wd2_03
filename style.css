@@ -48,18 +48,9 @@ body {
 
 }
 
-.btn{
-  background-color: #9697a1c9!important;
-  border-radius: 0 !important;
-  font-family: var(--sm-font) !important;
-  font-size: 20px !important;
-  color: whitesmoke !important;
-  width: 300px;
-  text-transform: uppercase;
-  border-radius: 10px !important;
-  margin-top: -100px;
-  margin-left: 20px;
-}
+
+
+
 .carousel-item{
 height: 700px !important;
 }
