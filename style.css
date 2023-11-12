@@ -51,6 +51,71 @@ body {
 
 
 
-.carousel-item{
-height: 700px !important;
+.carousel-item {
+  height: 700px !important;
 }
+
+footer {
+  background: #1E1E1E;
+
+  height: auto;
+  width: 100;
+  font-family: "Poppins";
+  padding-top: 40px;
+  color: #F5EFE6;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.footer-content h3 {
+  font-family: "Playfair Display SC";
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-variant: all-small-caps;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+
+}
+
+.socials li {
+  margin: 0 10px;
+
+}
+
+.socials a {
+  text-decoration: none;
+  color: #F5EFE6;
+}
+
+.socials a i {
+  font-size: 30px;
+  transition: color .4s ease;
+
+}
+
+.socials a:hover i {
+  color: var(--white);
+}
+
+ 
