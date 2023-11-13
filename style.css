@@ -68,6 +68,7 @@ footer {
 .footer-content {
   display: flex;
   align-items: center;
+ 
   justify-content: center;
   flex-direction: column;
 
@@ -117,5 +118,31 @@ footer {
 .socials a:hover i {
   color: var(--white);
 }
+.carousel-button{
+  margin-top: -50px;
 
+}
+.carousel-button a{
+  font-family: var(--sm-font);
+  font-size: 20px;
+  background-color: #151516d8;
+  color: whitesmoke;
+  margin-left: 1090px;
  
+}
+.thumbnail {
+	margin-bottom:6px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+    
+.blur {
+    transform: scale(0.9);
+    opacity: 0.6;
+  	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
