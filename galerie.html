@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script type="text/javascript" src="./gallery.js"></script>
+
+
 
 </head>
 
@@ -48,74 +49,37 @@
   <section class="container">
     <div class="content">
 
-      <h2 class="fs-2 pt-4 pb-1">Galerie</h2>
-      
-
-
-    <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image5.jpg" alt="#"> 
-        </div>
+      <div class="gallery">
+        <img src=".//images/image8.jpg" alt="#" onclick="openModal('.//images/image8.jpg')">
+        <img src=".//images/image9.jpg" alt="#" onclick="openModal('.//images/image9.jpg')">
+        <img src=".//images/image7.jpg" alt="#" onclick="openModal('.//images/image7.jpg')">
+        <img src=".//images/concert2.jpg" alt="#" onclick="openModal('.//images/concert2.jpg')">
+        <img src=".//images/image5.jpg" alt="#" onclick="openModal('.//images/image5.jpg')">
+        <img src=".//images/banner.jpg" alt="#" onclick="openModal('.//images/banner.jpg')">
+        <img src=".//images/image6.jpg" alt="#" onclick="openModal('.//images/image6.jpg')">
+        <img src=".//images/image4.jpg" alt="#" onclick="openModal('.//images/image4.jpg')">
+        <img src=".//images/image1.jpg" alt="#" onclick="openModal('.//images/image1.jpg')">
+        <img src=".//images/banner2.jpg" alt="#" onclick="openModal('.//images/banner2.jpg')">
+        <img src=".//images/concer1.jpg" alt="#" onclick="openModal('.//images/concer1.jpg')">
+        <img src=".//images/concert3.jpg" alt="#" onclick="openModal('.//images/concert3.jpg')">
       </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image1.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 ">
-        <div class="thumbnail">
-          <img src=".//images/image3.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image4.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image6.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image9.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image10.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image8.jpg" alt="#"> 
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail img-responsive">
-          <img src=".//images/image7.jpg" alt="#"> 
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="modal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
-        </div>
-        <div class="modal-body">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="" alt="Modal Image">
         </div>
       </div>
     </div>
 
-   
-
-
-    </div>
   </section>
+
+
+
+
+
+
+
+
   <footer>
     <div class="footer-content ">
       <h3>Sociální sítě</h3>
@@ -136,9 +100,31 @@
 
   </footer>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script>
+      function openModal(imageSrc) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+      }
+    
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+    
+      // Close the modal if the user clicks outside the modal content
+      window.onclick = function (event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
 </body>
 
 </html>
