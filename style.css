@@ -120,16 +120,18 @@ footer {
 }
 
 .carousel-button {
-  margin-top: -50px;
+  margin-top:5px;
+
 
 }
 
 .carousel-button a {
+
   font-family: var(--sm-font);
-  font-size: 20px;
-  background-color: #151516d8;
+  font-size: 30px;
+  background-color: #050505d8;
   color: whitesmoke;
-  margin-left: 1090px;
+  
 
 }
 
